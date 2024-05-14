@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./sytle.css">
+</head>
+
+<body>
+    <nav>
+        <h1 class="w-25"><a href="#">TEST</a></h1>
+        <ul class="noneForUl" id="unorderlist">
+            <li><a href="#first" id="Firstli">MaxOrMin</a></li>
+            <li><a href="#second" id="Secondli">TestChar</a></li>
+            <li><a href="#third" id="Thirdli">MultiplicationTable</a></li>
+            <li><a href="#fourth" id="Fourthli">PrintingEvenNums</a></li>
+            <li><a href="#fifth" id="Fifthli">Marks</a></li>
+            <li><a href="#sixth" id="Sixthli">Grades</a></li>
+        </ul>
+        <div class="hamburger none w-25">
+            <button id="hamburgerbtn">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
+        </div>
+    </nav>
+    <section class="first_sect" id="first">
+        <div class="container">
+            <form action="" id="MaxOrMin">
+                <h1>Max Or Min Number: </h1>
+                <input type="number" name="" id="first_num" placeholder="Enter The First Number">
+                <input type="number" name="" id="second_num" placeholder="Enter The Second Number">
+                <input type="number" name="" id="third_num" placeholder="Enter The Third Number">
+                <input type="number" name="" id="max_value" placeholder="The Max Number" readonly>
+                <input type="number" name="" id="min_value" placeholder="The Min Number" readonly>
+            </form>
+            <div class="d-flex"><button id="btn">CALC</button></div>
+        </div>
+    </section>
+
+    <section class="second_sect" id="second">
+        <div class="container">
+            <form action="" id="TestChar">
+                <h1>Test The Char: </h1>
+                <input type="text" id="content" placeholder="Enter The Char">
+                <input type="text" id="TestCharValue" readonly placeholder="Output">
+            </form>
+            <div class="d-flex"><button id="btn2">Test</button></div>
+        </div>
+    </section>
+
+    <section class="third_sect" id="third">
+        <div class="container">
+            <form action="" id="MultiplicationTable">
+                <h1>Printing a Multiplication Table Of Nums: </h1>
+                <input type="number" name="" id="NumsOfMultiplication" placeholder="Enter Tne Num Of Multiplication">
+            </form>
+            <div class="d-flex-col">
+                <input type="text" id="TextingArea" placeholder="The Total values" readonly>
+                <button id="btn3">Calc</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="fourth_sect" id="fourth">
+        <div class="container">
+            <form action="" id="PrintingEvenNums">
+                <h1>Printing Even Numbers Between 1 To This Number: </h1>
+                <input type="number" id="NumForCalcEvenVal" placeholder="Enter The Number:">
+                <input type="text" id="EvenValContent" readonly placeholder="Output">
+            </form>
+            <div class="d-flex"><button id="btn4">Clac</button></div>
+        </div>
+    </section>
+
+    <section class="fifth_sect" id="fifth">
+        <div class="container">
+            <form action="" id="marks">
+                <h1>Subjects: </h1>
+                <input type="number" class="Subs" id="Sub1" placeholder="Please Enter First Mark:">
+                <input type="number" class="Subs" id="Sub2" placeholder="Please Enter Second Mark:">
+                <input type="number" class="Subs" id="Sub3" placeholder="Please Enter Third Mark:">
+                <input type="number" class="Subs" id="Sub4" placeholder="Please Enter Fourth Mark:">
+                <input type="number" class="Subs" id="Sub5" placeholder="Please Enter Fifth Mark:">
+                <input type="number" readonly id="Total" placeholder="Total Marks">
+                <input type="number" readonly id="Average" placeholder="Average Marks">
+                <input type="number" readonly id="Percentage" placeholder="Percentage">
+            </form>
+            <div class="d-flex"><button id="btn5">Clac</button></div>
+        </div>
+    </section>
+
+    <section class="sixth_sect" id="sixth">
+        <div class="container">
+            <form action="" id="Grade">
+                <h1>Finding Grade: </h1>
+                <input type="number" class="Subs2" id="Sub6" placeholder="Please Enter First Mark:">
+                <input type="number" class="Subs2" id="Sub7" placeholder="Please Enter Second Mark:">
+                <input type="number" class="Subs2" id="Sub8" placeholder="Please Enter Third Mark:">
+                <input type="number" class="Subs2" id="Sub9" placeholder="Please Enter Fourth Mark:">
+                <input type="number" class="Subs2" id="Sub10" placeholder="Please Enter Fifth Mark:">
+                <input type="text" readonly id="grade" class="Subs2" placeholder="Your Grade:">
+            </form>
+            <div class="d-flex"><button id="btn6">Clac</button></div>
+        </div>
+    </section>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

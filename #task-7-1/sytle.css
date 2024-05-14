@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#MaxOrMin,
+#TestChar,
+#MultiplicationTable,
+#PrintingEvenNums,
+#marks,
+#Grade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 10px; */
+}
+
+#MaxOrMin input:focus {
+    border: 2px solid cornflowerblue !important;
+}
+
+#TestChar input:focus {
+    border: 2px solid darkorchid !important;
+}
+
+#MultiplicationTable input:focus,
+#TextingArea:focus {
+    border: 2px solid springgreen !important;
+}
+
+#PrintingEvenNums input:focus {
+    border: 2px solid crimson !important;
+}
+
+#marks input:focus {
+    border: 2px solid lightsalmon !important;
+}
+
+#Grade input:focus {
+    border: 2px solid deeppink !important;
+}
+
+input:focus {
+    outline: none;
+}
+
+h1 {
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#MaxOrMin h1 {
+    color: cornflowerblue;
+    border: 2px solid cornflowerblue;
+}
+
+#TestChar h1 {
+    color: darkorchid;
+    border: 2px solid darkorchid;
+}
+
+#MultiplicationTable h1 {
+    color: springgreen;
+    border: 2px solid springgreen;
+}
+
+#PrintingEvenNums h1 {
+    color: crimson;
+    border: 2px solid crimson;
+}
+
+#marks h1 {
+    color: lightsalmon;
+    border: 2px solid lightsalmon;
+}
+
+#Grade h1 {
+    color: deeppink;
+    border: 2px solid deeppink;
+}
+
+input {
+    height: 40px;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding-left: 40px;
+}
+
+#MaxOrMin input {
+    border: 2px dotted cornflowerblue;
+}
+
+#TestChar input {
+    border: 2px dotted darkorchid;
+}
+
+#MultiplicationTable input {
+    border: 2px dotted springgreen;
+}
+
+#PrintingEvenNums input {
+    border: 2px dotted crimson;
+}
+
+#marks input {
+    border: 2px dotted lightsalmon;
+}
+
+#Grade input {
+    border: 2px dotted deeppink;
+}
+
+.container {
+    width: 100%;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.d-flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first_sect,
+.second_sect,
+.third_sect,
+.fourth_sect,
+.fifth_sect,
+.sixth_sect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#third_num,
+#max_value,
+#min_value,
+#first_num,
+#second_num,
+#content,
+#TestCharValue,
+#NumsOfMultiplication,
+#NumForCalcEvenVal,
+#EvenValContent,
+.Subs,
+#Total,
+#Average,
+#Percentage,
+.Subs2 {
+    width: 75%;
+}
+
+#btn,
+#btn2,
+#btn3,
+#btn4,
+#btn5,
+#btn6 {
+    width: 140px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin: 10px;
+    transition: all .2s linear;
+}
+
+#btn {
+    border: 2px solid cornflowerblue;
+    color: cornflowerblue;
+}
+
+#btn2 {
+    border: 2px solid darkorchid;
+    color: darkorchid;
+}
+
+#btn3 {
+    border: 2px solid springgreen;
+    color: springgreen;
+}
+
+#btn4 {
+    border: 2px solid crimson;
+    color: crimson;
+}
+
+#btn5 {
+    border: 2px solid lightsalmon;
+    color: lightsalmon;
+}
+
+#btn6 {
+    border: 2px solid deeppink;
+    color: deeppink;
+}
+
+#btn:hover {
+    cursor: pointer;
+    color: white;
+    background-color: cornflowerblue;
+}
+
+#btn2:hover {
+    cursor: pointer;
+    color: white;
+    background-color: darkorchid;
+}
+
+#btn3:hover {
+    cursor: pointer;
+    color: white;
+    background-color: springgreen;
+}
+
+#btn4:hover {
+    cursor: pointer;
+    color: white;
+    background-color: crimson;
+}
+
+#btn5:hover {
+    cursor: pointer;
+    color: white;
+    background-color: lightsalmon;
+}
+
+#btn6:hover {
+    cursor: pointer;
+    color: white;
+    background-color: deeppink;
+}
+
+#MaxOrMin input::placeholder,
+#TestChar input::placeholder,
+#MultiplicationTable input::placeholder,
+#TextingArea input::placeholder,
+#PrintingEvenNums input::placeholder,
+#marks input::placeholder,
+#Grade input::placeholder {
+    color: gray;
+    font-size: 12px;
+}
+
+#TextingArea {
+    height: 40px;
+    border: 2px dotted springgreen;
+    width: 75%;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding-left: 40px;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+
+nav h1 {
+    padding: 10px 20px;
+    font-size: 40px;
+    padding: 0;
+    margin: 4px;
+}
+
+nav a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+nav ul li {
+    padding: 10px 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#Firstli::before {
+    content: "";
+    background-color: cornflowerblue;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all.3s linear;
+}
+
+#Secondli::before {
+    content: "";
+    background-color: darkorchid;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all.3s linear;
+}
+
+#Thirdli::before {
+    content: "";
+    background-color: springgreen;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all.3s linear;
+}
+
+#Fourthli::before {
+    content: "";
+    background-color: crimson;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all.3s linear;
+}
+
+#Fifthli::before {
+    content: "";
+    background-color: lightsalmon;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all.3s linear;
+}
+
+#Sixthli::before {
+    content: "";
+    background-color: deeppink;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all.3s linear;
+}
+
+#Firstli:hover::before {
+    width: 100%;
+}
+
+#Secondli:hover::before {
+    width: 100%;
+}
+
+#Thirdli:hover::before {
+    width: 100%;
+}
+
+#Fourthli:hover::before {
+    width: 100%;
+}
+
+#Fifthli:hover::before {
+    width: 100%;
+}
+
+#Sixthli:hover::before {
+    width: 100%;
+}
+
+#Firstli:hover {
+    color: dodgerblue;
+}
+
+#Secondli:hover {
+    color: darkorchid;
+}
+
+#Thirdli:hover {
+    color: springgreen;
+}
+
+#Fourthli:hover {
+    color: crimson;
+}
+
+#Fifthli:hover {
+    color: lightsalmon;
+}
+
+#Sixthli:hover {
+    color: deeppink;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: cornflowerblue;
+    margin: 3px 0;
+    border-radius: 1px;
+}
+
+.hamburger {
+    display: flex;
+}
+
+#hamburgerbtn:hover {
+    cursor: pointer;
+}
+
+.none {
+    display: none;
+}
+
+#hamburgerbtn {
+    border: none;
+    background-color: transparent;
+}
+
+@media(max-width: 992px) {
+    .noneForUl {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        margin-right: 15px;
+        margin-top: 15px;
+        align-items: flex-start;
+        justify-content: flex-end;
+        margin-left: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        width: 100%;
+    }
+}
+
+.w-25 {
+    width: 25%;
+}

@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.first_sect h2,
+.first_sect p {
+    color: black !important;
+}
+
+.first_sect,
+.second_sect,
+.fourth_sect {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.768);
+}
+
+.third_sect {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.768);
+}
+
+.container {
+    margin: 50px 110px;
+}
+
+.container h1 {
+    border-bottom: 4px dashed rgba(0, 0, 0, 0.768);
+    width: 25%;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+#coloration_container {
+    background-color: #59655b;
+    /* height: 400px; */
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    /* align-items: center; */
+    margin-left: 40px;
+}
+
+#coloration_container .image_container {
+    width: 40%;
+    /* padding: 20px; */
+}
+
+#coloration_container #image {
+    width: 100%;
+    border-top-right-radius: 5px;
+}
+
+#coloration_container .center h2 {
+    margin: 10px 0;
+}
+
+.images_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #59655b;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.images_container div {
+    width: 120px;
+    padding: 20px 0;
+    margin: 0 5px;
+}
+
+.images_container div img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.add_border {
+    border: 3px solid black;
+    text-align: center;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.add_border .flex-start {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 20px;
+}
+
+.content {
+    padding: 0 70px;
+    flex-grow: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content h2,
+.content p {
+    margin: 20px 0;
+}
+
+.none {
+    display: none !important;
+}
+
+body.dark {
+    background-color: rgba(0, 0, 0, 0.644);
+    color: white;
+}
+
+.d-flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.accordion_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.accordion_container div p span {
+    cursor: pointer;
+}
+
+.accordion_container div {
+    width: 80%;
+    background-color: hsla(84, 100%, 59%, 0.474) !important;
+    color: black !important;
+}
+
+#content1,
+#content2,
+#content3 {
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.rating_container {
+    width: 100%;
+    height: 390px;
+    background-color: rgb(20, 20, 99);
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.rating_container h2 {
+    font-size: 26px;
+    text-align: center;
+}
+
+.fourth_sect .container {
+    flex-grow: 10;
+}
+
+.star_container {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+#rating_content {
+    height: 30px;
+    font-size: 20px;
+    color: yellow;
+}
+
+@media(min-width: 768px) and (max-width: 992px) {
+    .container {
+        margin: 50px 70px;
+    }
+
+    #coloration_container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #coloration_container #image {
+        border-top-right-radius: 0;
+    }
+
+    .center {
+        align-items: center;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .center p {
+        text-align: center;
+    }
+
+    .accordion_container div {
+        width: 100%;
+    }
+
+    .images_container {
+        flex-wrap: wrap;
+        padding-top: 8px;
+    }
+
+    .images_container div {
+        width: 100px;
+        padding: 0;
+        margin: 5px 5px;
+    }
+
+    #coloration_container .image_container {
+        width: 55%;
+    }
+
+    .content {
+        padding: 0 40px;
+    }
+}
+
+@media(min-width: 576px) and (max-width: 768px) {
+    .container {
+        margin: 30px 50px;
+    }
+
+    #coloration_container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #coloration_container #image {
+        border-top-right-radius: 0;
+    }
+
+    .center {
+        align-items: center;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .center p {
+        text-align: center;
+    }
+
+    .images_container {
+        flex-wrap: wrap;
+        padding-top: 8px;
+    }
+
+    .accordion_container div {
+        width: 100%;
+    }
+
+    .d-flex-between {
+        font-size: 18px;
+        padding: 0px 18px;
+    }
+
+    .container h1 {
+        width: 50%;
+    }
+
+    .images_container div {
+        width: 100px;
+        padding: 0;
+        margin: 5px 5px;
+    }
+
+    #coloration_container .image_container {
+        width: 65%;
+    }
+
+    .content {
+        padding: 0 30px;
+    }
+}
+
+@media(min-width: 200px) and (max-width: 576px) {
+    .container {
+        margin: 10px 20px;
+    }
+
+    #coloration_container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .center {
+        align-items: center;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .center p {
+        text-align: center;
+    }
+
+    .images_container {
+        flex-wrap: wrap;
+        padding-top: 8px;
+    }
+
+    .accordion_container div {
+        width: 100%;
+    }
+
+    .d-flex-between {
+        font-size: 18px;
+        padding: 0px 18px;
+    }
+
+    .container h1 {
+        width: 50%;
+    }
+
+    .images_container div {
+        width: 70px;
+        padding: 0;
+        margin: 5px 5px;
+    }
+
+    #coloration_container .image_container {
+        width: 100%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .image_container img {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .content {
+        padding: 0 20px;
+    }
+}
